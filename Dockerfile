@@ -15,7 +15,7 @@ WORKDIR /app
 COPY app.sh .
 
 RUN chmod +x app.sh
-#ENTRYPOINT ["python", "IsaacFlask/src/app.py"]
+#ENTRYPOINT ["python", "IsaacFlask/app.py"]
 CMD ["./app.sh"]
 # cmd arrancar gunicorn
 #CMD ["gunicorn"," --bind=0.0.0.0:5000 app:app"]
